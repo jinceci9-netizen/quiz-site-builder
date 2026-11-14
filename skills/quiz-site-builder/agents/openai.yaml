@@ -1,0 +1,4 @@
+interface:
+  display_name: "Quiz Site Builder"
+  short_description: "Co-create quizzes, build and validate, deploy when requested"
+  default_prompt: "Use $quiz-site-builder to co-create a mobile-first quiz through creative direction, mechanism and visual experience, record decisions, then build and validate after design approval. If I say “直接做”, “一键生成” or “你来决定”, use one-click mode. Guide GitHub + Cloudflare Pages deployment only when requested with mainland-China-aware static asset choices. No payment or access codes by default."
