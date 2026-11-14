@@ -1,0 +1,24 @@
+name: Validate skill and starter
+on: [push, pull_request]
+jobs:
+  static:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+      - name: Skill structure + quiz validation
+        run: |
+          python scripts/check_skill.py
+          python skills/quiz-site-builder/scripts/validate_quizzes.py skills/quiz-site-builder/assets/starter/src/data
+          python skills/quiz-site-builder/scripts/audit_mainland_assets.py skills/quiz-site-builder/assets/starter
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+      - name: Starter unit tests and production build
+        working-directory: skills/quiz-site-builder/assets/starter
+        run: |
+          npm install --no-audit --no-fund
+          npm test
+          npm run build
