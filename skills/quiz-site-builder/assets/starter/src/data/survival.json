@@ -1,0 +1,255 @@
+{
+  "id": "palace",
+  "mode": "survival",
+  "title": "凤阙夜行",
+  "tagline": "这场宫廷风波，你能走到第几幕？",
+  "description": "一场完全原创的宫廷悬疑小游戏。六次抉择，同时积累危险与影响力；一味冒进或一味退让，都未必能走到终章。",
+  "theme": {
+    "accent": "#B58555",
+    "paper": "#F1E8DA"
+  },
+  "axes": [],
+  "survival": {
+    "dangerLimit": 5,
+    "maxEpisode": 76,
+    "minInfluence": 1
+  },
+  "questions": [
+    {
+      "id": "q1",
+      "prompt": "你意外收到一封没有署名的密信。",
+      "scene": "序章 · 无名之信",
+      "options": [
+        {
+          "id": "a",
+          "label": "立即赴约，一探究竟",
+          "effects": {
+            "danger": 2,
+            "influence": 2
+          }
+        },
+        {
+          "id": "b",
+          "label": "请可信之人辨别笔迹并追查",
+          "effects": {
+            "danger": 1,
+            "influence": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "把信藏起来，决定不再追查",
+          "effects": {
+            "danger": 0,
+            "influence": -1
+          }
+        }
+      ],
+      "episode": 3
+    },
+    {
+      "id": "q2",
+      "prompt": "夜宴上有人故意将失窃的玉佩放在你身边。",
+      "scene": "第二幕 · 玉佩风波",
+      "options": [
+        {
+          "id": "a",
+          "label": "当众指认对方，要求搜查",
+          "effects": {
+            "danger": 2,
+            "influence": 2
+          }
+        },
+        {
+          "id": "b",
+          "label": "找侍者核实行踪并保存证词",
+          "effects": {
+            "danger": 0,
+            "influence": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "装作没看见，避免被牵连",
+          "effects": {
+            "danger": 1,
+            "influence": -1
+          }
+        }
+      ],
+      "episode": 12
+    },
+    {
+      "id": "q3",
+      "prompt": "你发现盟友隐瞒了一段重要往事。",
+      "scene": "第三幕 · 旧盟新疑",
+      "options": [
+        {
+          "id": "a",
+          "label": "当面逼问，要求坦白",
+          "effects": {
+            "danger": 2,
+            "influence": 2
+          }
+        },
+        {
+          "id": "b",
+          "label": "循着线索核实之后再谈",
+          "effects": {
+            "danger": 0,
+            "influence": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "不问也不查，权当无事发生",
+          "effects": {
+            "danger": 1,
+            "influence": -1
+          }
+        }
+      ],
+      "episode": 19
+    },
+    {
+      "id": "q4",
+      "prompt": "掌事者想让你背下一件并非你所做的过失。",
+      "scene": "第四幕 · 风雪藏锋",
+      "options": [
+        {
+          "id": "a",
+          "label": "立刻拒绝，与掌事者正面冲突",
+          "effects": {
+            "danger": 2,
+            "influence": 2
+          }
+        },
+        {
+          "id": "b",
+          "label": "寻找能还原真相的证人",
+          "effects": {
+            "danger": 0,
+            "influence": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "先认下过失，回避争议",
+          "effects": {
+            "danger": 1,
+            "influence": -1
+          }
+        }
+      ],
+      "episode": 35
+    },
+    {
+      "id": "q5",
+      "prompt": "权势最高的人忽然对你示好。",
+      "scene": "第五幕 · 恩宠如刃",
+      "options": [
+        {
+          "id": "a",
+          "label": "全盘接受，借势夺权",
+          "effects": {
+            "danger": 2,
+            "influence": 2
+          }
+        },
+        {
+          "id": "b",
+          "label": "在职责范围内争取支持",
+          "effects": {
+            "danger": 0,
+            "influence": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "保持距离，放弃任何参与",
+          "effects": {
+            "danger": 1,
+            "influence": -1
+          }
+        }
+      ],
+      "episode": 52
+    },
+    {
+      "id": "q6",
+      "prompt": "终局前夜，你拿到了足以洗清所有误会的证据。",
+      "scene": "终章 · 黎明之前",
+      "options": [
+        {
+          "id": "a",
+          "label": "独自闯入大殿，一夜翻盘",
+          "effects": {
+            "danger": 2,
+            "influence": 2
+          }
+        },
+        {
+          "id": "b",
+          "label": "联络证人，公开提交完整证据",
+          "effects": {
+            "danger": 0,
+            "influence": 1
+          }
+        },
+        {
+          "id": "c",
+          "label": "继续将证据藏在暗处",
+          "effects": {
+            "danger": 1,
+            "influence": -1
+          }
+        }
+      ],
+      "episode": 76
+    }
+  ],
+  "outcomes": {
+    "early": {
+      "title": "风波初起",
+      "subtitle": "你的故事暂止于风声鹤唳之时",
+      "story": "你相信直觉，也敢于出手，却让对手太早看清了你的意图。在这个充满误解的故事里，勇敢需要证据和节奏来保护。",
+      "shareLine": "这一次，锋芒比时机走得更快。",
+      "strengths": [
+        "行动果断，有自己的态度",
+        "不愿长期忍受含混"
+      ],
+      "advice": [
+        "下一次先找出两个独立线索",
+        "区分表达立场和暴露全部底牌"
+      ]
+    },
+    "middle": {
+      "title": "暗潮之中",
+      "subtitle": "你走过风雨，却仍没躲开最后的暗潮",
+      "story": "你不是轻易被吓退的人，也在关系里学会了克制。可积累的风险终究在关键节点集中爆发。你需要的不是更怯懦，而是更早识别危险的代价。",
+      "shareLine": "你并不缺勇气，只差一个更稳的落点。",
+      "strengths": [
+        "面对复杂关系有韧性",
+        "愿意修正策略"
+      ],
+      "advice": [
+        "试着在早期建立可验证的同盟",
+        "避免让小隐患滚成大危机"
+      ]
+    },
+    "final": {
+      "title": "长夜将明",
+      "subtitle": "你走到了第76幕，终于看见天光",
+      "story": "你没有把谨慎误解成软弱。留证、观察、守住底线，让你在风浪中慢慢积攒真正的主动权。故事终结，你不必靠牺牲自己来证明胜利。",
+      "shareLine": "不争一时的风光，也能走到最后。",
+      "strengths": [
+        "关键时刻能区分事实与情绪",
+        "愿意为长期安全放慢脚步"
+      ],
+      "advice": [
+        "把这份判断力用到日常的困难决定中",
+        "也别错过值得主动争取的机会"
+      ]
+    }
+  }
+}
